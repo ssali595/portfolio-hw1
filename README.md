@@ -1,2 +1,2 @@
 # portfolio-hw1
-Week 1 homework 
+This is the Homework-1. There are different types of files in here, including HTML, CSS, and .png images. 
