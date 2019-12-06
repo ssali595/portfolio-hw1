@@ -3,14 +3,119 @@ h1 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
-p {
-    color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+div {
+    
+    display: block;
 }
 
-#header {
+
+ html, body {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url(assets/images/blue-snow.png);
+    background-repeat: repeat;
+    height: 100%;
+
+}
+
+.header {
+    width: 100%;
+    height: 170px;
+    border: 2px #cccccc solid;
     background-color: #ffffff;
-    border-color: #cccccc;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.fullContainer {
+    background-image: url(assets/images/blue-snow.png);
+    position: fixed;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -480px;
+    width: 960px;
+    height: 100%;
+}
+
+#name {
+    
+    bottom: -35px;
+    z-index: 1;
+    position: relative;
+    
+
+}
+
+.nav {
+
+    position: relative;
+    right: -700px;
+    top: -50px;
+    z-index: 1;
+    
+
+}
+
+.nav li {
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+
+    
+}
+
+.nav li a:link {
+    text-decoration: none;
+    color: #666666;
+
+}
+
+.nav li + li:before {
+    content: " | ";
+    padding: 8px;
+    color: grey
+}
+
+#name p {
+    background: #4aaaa5;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    padding: 12px;
+    width: 165px;
+    border: 2px #cccccc solid;
+}
+
+#middleContainer {
+    background-color: #ffffff;
+    border-color: #dddddd;
+    width: 920px;
+    min-height: 500px;
+    background-color: white;
+    margin: auto;
+    border: 1px #dddddd solid;
+    padding: 20px;
+
+}
+
+#middleContainer p {
+    line-height: 28 px;
+}
+
+#middleContainer img {
+
+    width: 200px;
+    float: left;
+    padding: 15px;
+
+}
+
+#content {
+
+    clear: both;
 }
 
 #footer {
@@ -18,11 +123,50 @@ p {
     border-top: 8px solid #4aaaa5;
 }
 
-#content {
-    background-color: #ffffff;
-    border-color: #dddddd;
-}
 
 #container {
     background-image: url(assets/images/blue-snow.png);
+}
+
+
+#portfolioContent{
+
+    width: 500px;
+
+}
+
+#portfolioBox {
+
+    height: 400px;
+    width: 400px;
+    display: inline-block;
+    margin: 5px 20px;
+    position: relative;
+}
+
+#portfolioLabel {
+
+    color: #ffffff;
+    background-color: #4aaaa5;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    left: 15px;
+    top: 104px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.footer {
+
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    text-align: center;
 }
